@@ -81,7 +81,7 @@ header {
 
 .page-title {
   font-weight: 200;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #4d4f62;
 }
@@ -92,8 +92,9 @@ header {
 }
 
 .page-title-content {
-  font-size: 15px;
+  font-size: 0.9rem;
   color: #4d4f62;
+  margin-top: 16px;
 }
 
 /* MAIN */
@@ -112,14 +113,14 @@ header {
   border-radius: 5px;
 }
 .card-title {
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #4d4f62;
   margin-bottom: 1px;
 }
 
 .card-content {
-  font-size: 13px;
+  font-size: 0.8rem;
   line-height: 1.4;
   color: #4d4f62;
   letter-spacing: 0.09px;
@@ -148,10 +149,62 @@ header {
 /* FOOTER */
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6rem;
   text-align: center;
   margin-top: 4rem;
+  color: rgb(58, 57, 57);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: rgb(26, 131, 117);
+}
+
+@media (min-width: 69.37rem) {
+  /* HEADER */
+  header {
+    width: 540px;
+  }
+
+  header span {
+    display: inline-block;
+  }
+
+  .main-container {
+    margin: 2em 10em;
+    display: grid;
+    grid-template-areas:
+      "cardone cardtwo cardfour"
+      "cardone cardthree cardfour";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    align-items: center;
+    grid-gap: 30px;
+  }
+
+  .card-images {
+    margin-top: 40px;
+  }
+
+  .card1 {
+    grid-area: cardone;
+  }
+
+  .card2 {
+    grid-area: cardtwo;
+  }
+
+  .card3 {
+    grid-area: cardthree;
+  }
+
+  .card4 {
+    grid-area: cardfour;
+  }
+
+  .cards {
+    padding: 32px;
+  }
+
+  .card-title {
+    margin-bottom: 6px;
+  }
 }
