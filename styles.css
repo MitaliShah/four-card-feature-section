@@ -70,6 +70,7 @@ body {
   align-items: center;
   margin: 0 auto;
   max-width: 23.4rem;
+  background-color: #ffffff;
 }
 
 /* HEADER  */
@@ -111,6 +112,7 @@ header {
   padding: 28px;
   box-shadow: 0 4px 4px 0 hsl(229, 6%, 66%);
   border-radius: 5px;
+  background-color: var(--light-grey);
 }
 .card-title {
   font-size: 1.3rem;
@@ -162,10 +164,17 @@ header {
   /* HEADER */
   header {
     width: 540px;
+    margin-bottom: 3.75rem;
   }
 
   header span {
     display: inline-block;
+  }
+
+  .page-title {
+    font-size: 2.25rem;
+    font-weight: 200;
+    letter-spacing: 2.25px;
   }
 
   .main-container {
